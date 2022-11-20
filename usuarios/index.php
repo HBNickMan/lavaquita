@@ -113,7 +113,7 @@
                 </thead>
                 <?php foreach($listaUsuarios as $usuario){ ?>
                     <tr>
-                        <td><img class="img-thumbnail" width="100px" src="../img/<?php echo $usuario['foto']; ?>" alt=""> </td>
+                        <td style="text-align: center;"><img class="img-thumbnail" width="100px" src="../img/<?php echo $usuario['foto']; ?>" alt=""> </td>
                         <td><?php echo $usuario['nomuser']; ?></td>
                         <td><?php echo $usuario['nombre']; ?> <?php echo $usuario['apellido']; ?></td>
                         <td><?php echo $usuario['correo']; ?></td>
