@@ -5,7 +5,7 @@
 
     try {
         $pdo = new PDO($servidor,$usuario,$password,array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET NAMES utf8"));
-        echo "Conectado con Exito..!";
+        /*echo "Conectado con Exito..!";*/
     } catch (PDOException $e) {
         
         echo "Conexion Sin Exito! :( " . $e->getMessage();
