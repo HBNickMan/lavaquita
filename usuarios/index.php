@@ -210,6 +210,7 @@
                         }
                         $("#"+inputnom).removeClass("is-invalid");
                         $("#"+inputnom).addClass("is-valid");
+                        $("#"+inputnom).css( "border-color","green");
                         if ($searchValue === "") {
                             event.preventDefault();
                             $("#"+inputnom).removeClass("is-valid");

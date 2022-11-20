@@ -45,7 +45,7 @@
 
             $sentencia->bindParam(':Foto',$nombreArchivo);
             $sentencia->execute();
-            //header('Location: index.php');
+            header('Location: ./index.php');
             break;
         case 'btnModificar':
             $sentencia = $pdo->prepare("UPDATE usuarios SET 
@@ -92,7 +92,7 @@
                 
             }
 
-            header('Location: index.php');
+            header('Location: ./index.php');
             break;
         case 'btnEliminar':
             $sentencia = $pdo->prepare("SELECT Foto FROM usuarios WHERE id=:id");
@@ -108,10 +108,10 @@
             $sentencia = $pdo->prepare("DELETE FROM usuarios WHERE id=:id");
             $sentencia->bindParam(':id',$txtID);
             $sentencia->execute();
-            header('Location: index.php');
+            header('Location: ./index.php');
             break;
         case 'btnCancelar':
-            header('Location: index.php');
+            header('Location: ./index.php');
         case 'Seleccionar':
             $accionAgregar="disabled";
             $accionModificar=$accionEliminar=$accionCancelar="";
